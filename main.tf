@@ -13,7 +13,7 @@
 resource "aws_subnet" "terra_public_subnet" {
   vpc_id     = var.vpc_id
   cidr_block = var.cidr_block
-  availability_zone       = "ca-central-1a"
+  availability_zone       = "ap-southeast-1"
   map_public_ip_on_launch = true
   tags = {
     Name      = "terra_public_subnet"
